@@ -20,22 +20,15 @@
 public class Array1 {
   
   /**
-   * Given an array of ints, return true if 6 appears as either the first or last element in the array. The
-   * array will be length 1 or more.
+   * Given an array of ints, return true if 6 appears as either the first or last element in the array. 
+   * The array will be length 1 or more.
    *
    * @param nums
    *
    * @return
    */
   public boolean firstLast6(int[] nums) {
-    boolean result=false;
-    if (nums[0] == 6) {
-      result=true;
-    } else if (nums[nums.length-1] == 6) {
-      result=true;
-    }
-    
-    return result;
+    return nums[0] == 6 || nums[nums.length - 1] == 6;
   }
   
   /**
@@ -47,13 +40,7 @@ public class Array1 {
    * @return
    */
   public boolean sameFirstLast(int[] nums) {
-    boolean result=false;
-    if (nums.length>=1) {
-      if (nums[0] == nums[nums.length-1]) {
-        result=true;
-      }
-    }
-    return result;
+    return  nums.length>=1 && nums[0] == nums[nums.length - 1];
   }
   
   /**
@@ -62,9 +49,7 @@ public class Array1 {
    * @return
    */
   public int[] makePi() {
-    int[] result={3,1,4};
-    
-    return result;
+    return new int[]{3,1,4};
   }
   
   /**
@@ -93,21 +78,20 @@ public class Array1 {
       result+=nums[u];
     }
     return result;
+    
+    return nums.length>0 && nums[nums.length-1]+sum3()
   }
   
   /**
    * Given an array of ints length 3, return an array with the elements "rotated left" so {1, 2, 3} yields
-   * {2,
-   * 3, 1}.
+   * {2, 3, 1}.
    *
    * @param nums
    *
    * @return
    */
   public int[] rotateLeft3(int[] nums) {
-    int[] result={nums[1],nums[2],nums[0]};
-    
-    return result;
+    return new int[]{nums[1],nums[2],nums[0]};
   }
   
   /**

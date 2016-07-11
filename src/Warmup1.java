@@ -124,7 +124,7 @@ public class Warmup1 {
    * @return
    */
   public boolean posNeg(int a,int b,boolean negative) {
-    return negative ? a<0 && b<0 : (a<0 && b>0) || (b<0 && a>0);
+    return negative ? a<0 && b<0 : a<0 && b>0 || b<0 && a>0;
   }
   
   /**
@@ -177,8 +177,7 @@ public class Warmup1 {
    * @return
    */
   public String front3(String str) {
-    return str.length()<=3 ?
-             str+str+str : str.substring(0,3)+str.substring(0,3)+str.substring(0,3);
+    return str.length()<=3 ? str+str+str : str.substring(0,3)+str.substring(0,3)+str.substring(0,3);
   }
   
   /**
@@ -218,8 +217,7 @@ public class Warmup1 {
    * @return
    */
   public String front22(String str) {
-    return str.length()<2 ?
-             str+str+str : str.substring(0,2)+str+str.substring(0,2);
+    return str.length()<2 ? str+str+str : str.substring(0,2)+str+str.substring(0,2);
   }
   
   /**

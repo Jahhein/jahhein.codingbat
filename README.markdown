@@ -19,7 +19,7 @@ Each section has it's own .java file with each method name being the same as is 
 method is directly from the question online.
 
 
-### What are these .iml files? (Intellij IDEA Module)
+### What are these .iml files? (Intellij IDEA Module) *REMOVED*
 
 These are files specific for Jet Brains' Intellij IDEA IDE. Please simply delete them if you do not
 use Intellij IDEA. 

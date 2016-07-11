@@ -17,6 +17,4 @@
  * @author Jacob Hein
  */
 
-public class AP1 {
-  
-}
+public class AP1 {}

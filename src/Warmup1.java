@@ -32,7 +32,7 @@ public class Warmup1 {
    * @return
    */
   public boolean sleepIn(boolean weekday,boolean vacation) {
-    return (vacation || (!weekday));
+    return vacation || !weekday;
   }
   
   /**

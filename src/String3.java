@@ -23,8 +23,7 @@ public class String3 {
     String[] sRay=str.split(" ");
     int cnt=0;
     for (String s : sRay)
-      if (s.charAt(s.length()) == 'z' || s.charAt(s.length()) == 'y')
-        cnt++;
+      if (s.charAt(s.length()) == 'z' || s.charAt(s.length()) == 'y') cnt++;
     
     return cnt;
   }

@@ -1,3 +1,4 @@
 # IntelliJ 15 project files
 .idea
 out
+*.class
